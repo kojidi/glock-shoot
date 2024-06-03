@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    cursor: url("../imgs/target-60.png") 30 30, auto;
+    overflow: hidden;
+}
+
+.lines {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hor-line {
+    position: absolute;
+    width: 100%;
+    height: 1px; 
+    background-color: red; 
+    top: 50%; 
+    left: 0;
+}
+
+.ver-line {
+    position: absolute; 
+    width: 1px; 
+    height: 100vh; 
+    background-color: red; 
+    top: 0; 
+    left: 50%;
+}
+
+.container {
+    width: 100%;
+    height: 100svh;
+    background-color: #06192B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gun-box {
+    position: absolute;
+    transform-origin: 50% 17px;
+    top: calc(50% - 17px);
+}
+
+.gun {
+    max-width: 250px;
+}
+
+.bullet {
+    max-width: 50px;
+    position: absolute;
+    top: 4.5px;
+    right: 5px;
+    z-index: 100;
+    transition: 2s;
+}

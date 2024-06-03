@@ -1,4 +1,5 @@
 const gun = document.querySelector('.gun-box');
+const gunSound = document.querySelector('.gun-sound');
 // const bullet = document.querySelector('.bullet');
 
 const centerX = window.innerWidth / 2;
@@ -14,6 +15,8 @@ document.addEventListener('mousemove', e => {
 })
 
 document.addEventListener('click', () => {
+    console.log(gunSound);
+    gunSound.play();
     bullet.style.right = "-10000px";
     
     const newbullet = document.createElement('img');
